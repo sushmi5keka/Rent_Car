@@ -1,0 +1,3 @@
+create database rentcar;
+
+use rentcar;
