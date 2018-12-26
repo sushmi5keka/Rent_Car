@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<!-- start section navbar -->
+<nav id="main-nav" th:fragment="main-navbar">
+    <div class="row">
+        <div class="container">
+
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" th:src="@{images/logo.png}" alt="logo"></a>
+            </div>
+
+            <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+            <ul class="nav-menu list-unstyled">
+                <li><a href="index.html" class="smoothScroll">Home</a></li>
+                <li><a href="about.html" class="smoothScroll">About</a></li>
+                <li><a href="Cars.html" class="smoothScroll">Cars</a></li>
+                <li><a href="Booking.html" class="smoothScroll">Booking</a></li>
+                <li><a href="ContactUs.html" class="smoothScroll">ContactUs</a></li>
+                <li><a href="signIn.html" class="smoothScroll">SignIn</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!-- End section navbar -->
+</body>
+</html>

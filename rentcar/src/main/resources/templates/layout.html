@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">rentcar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="content-security-policy">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+
+    <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" href="/css/blog.css" th:href="@{/css/blog.css}"/>
+    <link rel="stylesheet" href="/css/responsive.css" th:href="@{/css/responsive.css}"/>
+
+</head>
+
+
+
+<body>
+    <div th:replace="~{fragments/navbar.html :: main-navbar}"></div>
+    <div th:replace="~{fragments/footer.html :: copyright}"></div>
+
+    <div class="content">
+     <div layout:fragment="custom-content">
+         <h2>Content will go Here</h2>
+     </div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script  th:src="@{/lib/jquery/jquery.min.js}"src="/lib/jquery/jquery.min.js"></script>
+    <script th:src="@{/lib/jquery/jquery-migrate.min.js}" src="/lib/jquery/jquery-migrate.min.js"></script>
+
+    <script th:src="@{/lib/bootstrap/js/bootstrap.bundle.min.js}"  src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script th:src="@{/lib/typed/typed.js}" src="/lib/typed/typed.js"></script>
+
+    <script th:src="@{/lib/owlcarousel/owl.carousel.min.js}" src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script th:src="@{/lib/magnific-popup/magnific-popup.min.js}" src="/lib/magnific-popup/magnific-popup.min.js"></script>
+
+    <script th:src="@{/lib/isotope/isotope.pkgd.min.js}" src="/lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script th:src="@{/contactform/contactform.js}" src="/contactform/contactform.js"></script>
+
+    <script th:src="@{/js/main.js}" src="/js/main.js" ></script>
+</body>
+</html>
