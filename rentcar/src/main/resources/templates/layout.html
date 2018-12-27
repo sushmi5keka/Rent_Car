@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
-        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">rentcar</title>
     <meta charset="UTF-8">
@@ -15,57 +15,69 @@
     <link rel="stylesheet" href="/css/responsive.css" th:href="@{/css/responsive.css}"/>
 
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css" th:href="@{/lib/bootstrap/css/bootstrap.css}"/>
-    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" th:href="@{/lib/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"
+          th:href="@{/lib/bootstrap/css/bootstrap.min.css}"/>
 
     <link rel="stylesheet" href="/lib/hover/hover.min.css" th:href="@{/lib/hover/hover.min.css}"/>
 
     <link rel="stylesheet" href="/lib/ionicons/css/ionicons.css" th:href="@{/lib/ionicons/css/ionicons.css}"/>
     <link rel="stylesheet" href="/lib/ionicons/css/ionicons.min.css" th:href="@{/lib/ionicons/css/ionicons.min.css}"/>
 
-    <link rel="stylesheet" href="/lib/magnific-popup/magnific-popup.css" th:href="@{/lib/magnific-popup/magnific-popup.css}"/>
+    <link rel="stylesheet" href="/lib/magnific-popup/magnific-popup.css"
+          th:href="@{/lib/magnific-popup/magnific-popup.css}"/>
 
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.css" th:href="@{/lib/owlcarousel/assets/owl.carousel.css}"/>
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.min.css" th:href="@{/lib/owlcarousel/assets/owl.carousel.min.css}"/>
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.css"
+          th:href="@{/lib/owlcarousel/assets/owl.carousel.css}"/>
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.min.css"
+          th:href="@{/lib/owlcarousel/assets/owl.carousel.min.css}"/>
 
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.default.css" th:href="@{/lib/owlcarousel/assets/owl.theme.default.css}"/>
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.default.min.css" th:href="@{/lib/owlcarousel/assets/owl.theme.default.min.css}"/>
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.default.css"
+          th:href="@{/lib/owlcarousel/assets/owl.theme.default.css}"/>
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.default.min.css"
+          th:href="@{/lib/owlcarousel/assets/owl.theme.default.min.css}"/>
 
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.green.css" th:href="@{/lib/owlcarousel/assets/owl.theme.green.css}"/>
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.green.min.css" th:href="@{/lib/owlcarousel/assets/owl.theme.green.min.css}"/>
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.green.css"
+          th:href="@{/lib/owlcarousel/assets/owl.theme.green.css}"/>
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.theme.green.min.css"
+          th:href="@{/lib/owlcarousel/assets/owl.theme.green.min.css}"/>
 </head>
 
 
 
 <body>
-    <div th:replace="~{fragments/navbar.html :: main-navbar}"></div>
-    <div th:replace="~{fragments/footer.html :: copyright}"></div>
+<div th:replace="~{fragments/navbar.html :: main-navbar}"></div>
 
-    <div class="content">
-     <div layout:fragment="custom-content">
-         <h2>Content will go Here</h2>
-     </div>
+
+<div class="content">
+    <div layout:fragment="custom-content">
+        <h2>Content will go Here</h2>
     </div>
+</div>
 
-    <!-- JavaScript -->
-    <script th:src="@{/js/main.js}" src="/js/main.js" ></script>
+<div th:replace="~{fragments/footer.html :: copyright}"></div>
+<script th:src="@{/lib/jquery/jquery.min.js}" src="/lib/jquery/jquery.min.js"></script>
+<!-- JavaScript -->
+<script th:src="@{/js/main.js}" src="/js/main.js"></script>
 
-    <!-- Contact Form JavaScript File -->
-    <script th:src="@{/contactform/contactform.js}" src="/contactform/contactform.js"></script>
+<!-- Contact Form JavaScript File -->
+<script th:src="@{/contactform/contactform.js}" src="/contactform/contactform.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script th:src="@{/lib/bootstrap/js/bootstrap.bundle.min.js}"  src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script th:src="@{/lib/bootstrap/js/bootstrap.min.js}"  src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- JavaScript Libraries -->
+<script th:src="@{/lib/bootstrap/js/bootstrap.bundle.min.js}" src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/lib/bootstrap/js/bootstrap.min.js}" src="/lib/bootstrap/js/bootstrap.min.js"></script>
 
-    <script th:src="@{/lib/isotope/isotope.pkgd.min.js}" src="/lib/isotope/isotope.pkgd.min.js"></script>
+<script th:src="@{/lib/isotope/isotope.pkgd.min.js}" src="/lib/isotope/isotope.pkgd.min.js"></script>
 
-    <script  th:src="@{/lib/jquery/jquery.min.js}"src="/lib/jquery/jquery.min.js"></script>
-    <script th:src="@{/lib/jquery/jquery-migrate.min.js}" src="/lib/jquery/jquery-migrate.min.js"></script>
 
-    <script th:src="@{/lib/magnific-popup/magnific-popup.min.js}" src="/lib/magnific-popup/magnific-popup.min.js"></script>
+<script th:src="@{/lib/jquery/jquery-migrate.min.js}" src="/lib/jquery/jquery-migrate.min.js"></script>
 
-    <script th:src="@{/lib/owlcarousel/owl.carousel.min.js}" src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script th:src="@{/lib/magnific-popup/magnific-popup.min.js}" src="/lib/magnific-popup/magnific-popup.min.js"></script>
 
-    <script th:src="@{/lib/typed/typed.js}" src="/lib/typed/typed.js"></script>
+<script th:src="@{/lib/owlcarousel/owl.carousel.min.js}" src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
+<script th:src="@{/lib/typed/typed.js}" src="/lib/typed/typed.js"></script>
+
+
 
 </body>
 </html>
