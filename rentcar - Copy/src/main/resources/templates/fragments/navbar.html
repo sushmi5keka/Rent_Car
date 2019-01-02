@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<!-- start section navbar -->
+<nav id="main-nav" th:fragment="main-navbar">
+    <div class="row">
+        <div class="container">
+
+            <div class="logo">
+                <a href="/" th:href="@{/}"><img src="images/logo.png" th:src="@{images/logo.png}" alt="logo"></a>
+            </div>
+
+            <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+            <ul class="nav-menu list-unstyled">
+                <li><a href="/" th:href="@{/}" class="smoothScroll">Home</a></li>
+                <li><a href="/about.jsf" th:href="@{/about.jsf}" class="smoothScroll">About</a></li>
+                <li><a href="/car.jsf" th:href="@{/car.jsf}" class="smoothScroll">Cars</a></li>
+                <li><a href="/booking.jsf" th:href="@{/booking.jsf}" class="smoothScroll">Booking</a></li>
+                <li><a href="/contactus.jsf" th:href="@{/contactus.jsf}" class="smoothScroll">Contact Us</a></li>
+                <li><a href="/signin.jsf" th:href="@{/signin.jsf}" class="smoothScroll">Sign In</a></li>
+                <li><a href="/login.jsf" th:href="@{/login.jsf}" class="smoothScroll">Log In</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!-- End section navbar -->
+</body>
+</html>

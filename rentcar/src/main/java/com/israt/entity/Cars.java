@@ -2,6 +2,7 @@ package com.israt.entity;
 
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "cars")
@@ -11,26 +12,23 @@ public class Cars {
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
 
-    @Column(name = "car_name",nullable = false)
-    private String carName;
+    @Column(name = "car_type_id")
+    private CarType carType;
 
-    @Column(name = "numbers_of_seat")
-    private String numbersOfSeat;
+    @Column(name = "brunch_id")
+    private Branch brunch;
 
-    @Column(name = "image")
-    private byte[] image;
+    @Column(name = "registration_number")
+    private String registrationNumber;
 
-    @Column(name = "driver_name")
-    private String driverName;
+    @Column(name = "color")
+    private String color;
 
-    @Column(name = "driver_mobile")
-    private String driverMobile;
+    @Column(name = "date_of_manufacture")
+    private Date ldateOfManufacture;
 
-    @Column(name = "location")
-    private String location;
-
-    @Column(name = "rent_cost")
-    private String rentCost;
+    @Column(name = "base_price_per_day")
+    private String basePricePerDay;
 
 
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout.html}">
+
+<head>
+    <title>logincreate</title>
+</head>
+
+<body>
+    <!-- start section header -->
+    <div layout:fragment="custom-content">
+<br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <form  th:object="${objt}" method="post" th:action="@{/login/create.jsf}">
+
+    <input type="text" class="form-control" id="massage" th:field="*{massage}" required placeholder="Enter mssage."/>
+
+
+           <button >Submit</button>
+
+        </form>
+    </div>
+    <!-- start sectoion contact -->
+
+<!-- End section footer -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout.html}">
+
+<head>
+    <title>About</title>
+</head>
+
+<body>
+    <!-- start section header -->
+    <div layout:fragment="custom-content">
+<br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <form  th:object="${obj}" method="post" th:action="@{/role/create.jsf}">
+
+    <input type="text" class="form-control" id="rolename" th:field="*{roleName}" required placeholder="Enter Role Name."/>
+
+
+           <button >Submit</button>
+
+        </form>
+    </div>
+    <!-- start sectoion contact -->
+
+<!-- End section footer -->
+
+
+
+</body>
+
+</html>
