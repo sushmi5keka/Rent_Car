@@ -36,6 +36,24 @@ public class HomeController {
 
     }
 
+    @GetMapping(value = "/bookingdetail.jsf")
+    public String displayBookingDetail() {
+        return "bookingdetail";
+
+    }
+
+    @GetMapping(value = "/customer.jsf")
+    public String displayCustomer() {
+        return "customer";
+
+    }
+
+    @GetMapping(value = "/customerdetail.jsf")
+    public String displayCustomerDetail() {
+        return "customerdetail";
+
+    }
+
     @GetMapping(value = "/contactus.jsf")
     public String displayContactus() {
         return "contactus";

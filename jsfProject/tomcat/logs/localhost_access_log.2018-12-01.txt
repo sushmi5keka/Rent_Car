@@ -1,0 +1,17 @@
+127.0.0.1 - - [01/Dec/2018:13:08:01 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [01/Dec/2018:13:08:02 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [01/Dec/2018:13:08:03 +0600] "GET /manager/text/ HTTP/1.1" 401 2536
+127.0.0.1 - tomcat [01/Dec/2018:13:08:14 +0600] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [01/Dec/2018:13:08:14 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - tomcat [01/Dec/2018:13:08:14 +0600] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [01/Dec/2018:13:08:14 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - tomcat [01/Dec/2018:13:08:14 +0600] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [01/Dec/2018:13:08:14 +0600] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - tomcat [01/Dec/2018:13:08:14 +0600] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - tomcat [01/Dec/2018:13:08:15 +0600] "GET /manager/text/list HTTP/1.1" 200 202
+127.0.0.1 - tomcat [01/Dec/2018:13:08:15 +0600] "GET /manager/text/list HTTP/1.1" 200 202
+127.0.0.1 - tomcat [01/Dec/2018:13:08:15 +0600] "GET /manager/text/deploy?config=file%3A%2FC%3A%2FUsers%2FUser%2FAppData%2FLocal%2FTemp%2Fcontext1662734647426639738.xml&path=/demo HTTP/1.1" 200 62
+127.0.0.1 - tomcat [01/Dec/2018:13:08:15 +0600] "GET /manager/text/start?path=/demo HTTP/1.1" 200 61
+0:0:0:0:0:0:0:1 - - [01/Dec/2018:13:08:40 +0600] "GET /demo HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2018:13:08:43 +0600] "GET /demo/ HTTP/1.1" 200 218
+0:0:0:0:0:0:0:1 - - [01/Dec/2018:13:08:46 +0600] "GET /favicon.ico HTTP/1.1" 200 21630
