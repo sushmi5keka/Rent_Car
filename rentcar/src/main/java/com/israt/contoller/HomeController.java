@@ -23,6 +23,13 @@ public class HomeController {
 
     }
 
+
+    @GetMapping(value = "/carlist.jsf")
+    public String displayCarList() {
+        return "carlist";
+
+    }
+
     @GetMapping(value = "/booking.jsf")
     public String displayBooking() {
         return "booking";

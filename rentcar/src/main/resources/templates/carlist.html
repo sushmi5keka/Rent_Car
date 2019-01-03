@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout.html}">
+
+<head>
+    <title>Carlist</title>
+</head>
+
+<body>
+    <!-- start section header -->
+    <div  layout:fragment="custom-content">
+
+        <!-- start section portfolio -->
+        <div id="portfolio" class="text-center paddsection">
+
+            <div class="container">
+                <br/>
+                <div class="section-title text-center">
+                    <h2>Our Car's</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <br/>
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <table class="table">
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Ernst Handel</td>
+                                <td>Roland Mendel</td>
+                                <td>Austria</td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                            </tr>
+                            <tr>
+                                <td>Laughing Bacchus Winecellars</td>
+                                <td>Yoshi Tannamuri</td>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Magazzini Alimentari Riuniti</td>
+                                <td>Giovanni Rovelli</td>
+                                <td>Italy</td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End section portfolio -->
+
+
+        <!-- start section journal -->
+
+        <!-- End section journal -->
+
+
+        <!-- start sectoion contact -->
+        <div id="contact" class="paddsection">
+            <div class="container">
+                <div class="contact-block1">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="contact-contact">
+
+                                <h2 class="mb-30">GET IN TOUCH</h2>
+
+                                <ul class="contact-details">
+                                    <li><span>23 Dhanmondi, road-5</span></li>
+                                    <li><span>Dhaka,Bangladesh.</span></li>
+                                    <li><span>+88 01912704287</span></li>
+                                    <li><span>car_rental@gmail.com</span></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <h2 class="mb-30">Cars Registration Form</h2>
+
+                            <form action="" method="post" role="form" class="contactForm">
+                                <div class="row">
+
+                                    <div id="sendmessage">Thank you!</div>
+                                    <div id="errormessage"></div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group contact-block1">
+                                            <label>Car Name : </label>
+                                            <input type="text" name="name" class="form-control" id="name" placeholder="Car Name"
+                                                   data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>No Of Seats : </label>
+                                            <input type="text" class="form-control" name="seat" id="seat"
+                                                   placeholder="no. of seats" data-rule="seat" data-msg=""/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Car Image : </label>
+                                            <input type="text" class="form-control" name="image" id="image" placeholder="image"
+                                                   data-rule="minlen:4" data-msg=""/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Location : </label>
+                                            <input type="text" class="form-control" name="location" id="location"
+                                                   placeholder="location" data-rule="minlen:4" data-msg=""/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Driver Name : </label>
+                                            <input type="text" class="form-control" name="drivername" id="drivername"
+                                                   placeholder="driver name" data-rule="minlen:4" data-msg=""/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Driver Phone No : </label>
+                                            <input type="text" class="form-control" name="driverphone" id="driverphone"
+                                                   placeholder="driver phone number" data-rule="minlen:4" data-msg=""/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label>Rent Cost : </label>
+                                            <input type="text" class="form-control" name="rentcost" id="rentcost"
+                                                   placeholder="rent cost" data-rule="minlen:4" data-msg=""/>
+                                            <div class="validation"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <input type="submit" class="btn btn-defeault btn-send" value="submit">
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start sectoion contact -->
+
+    </div>
+    <!-- start sectoion contact -->
+
+<!-- End section footer -->
+
+
+</body>
+
+</html>

@@ -27,4 +27,6 @@ public class LogIn {
     public void setMassage(String massage) {
         this.massage = massage;
     }
+
+
 }
